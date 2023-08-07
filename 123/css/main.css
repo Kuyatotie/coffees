@@ -1,0 +1,416 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+
+}
+html {
+    scroll-behavior: fixed;
+}
+body {
+    background: #131313;
+    color: #ffff;
+
+}
+#header-text {
+    
+    margin-left: 30px;
+    margin-top: 35%;
+    font-size: 30px;
+}
+#header-text p{
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: 15px;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/BG.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#header-text {
+   font-size: 20px;
+   position: absolute;
+   margin-top: 10%;
+}
+.container {
+    padding: 10px 10%;
+}
+nav {
+    z-index: 999;
+    margin: 20px 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    font-weight: 600;
+}
+nav ul li a:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: crimson;
+    position: absolute;
+    bottom: -6px;
+    transition: 0.5s;
+    left: 0;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+button {
+    display: flex;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    background-color: #f77062;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+button:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------CONTACT----------------------------- */
+
+
+
+#contact {
+    width: 100%;
+    height: 100vh;
+
+}    
+    
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.contact-left {
+    margin-left: 3px ;
+    position: absolute;
+    flex-basis: 35%;
+    font-size: 30px;
+    margin-top: 20px;
+    
+}
+
+
+
+.contact-left a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 30px;
+    display: flex;
+    margin: 5px;
+
+}
+.contact-left a i {
+    color: crimson;
+    font-size: 25px;
+    margin-right: 3px;
+}
+
+
+
+
+.social-icon {
+    margin-top: 3px;
+    display: inline-block;
+    display: flex;
+}
+.social-icon a i{
+    text-decoration: none;
+    font-size: 30px;
+    
+    color: #ffff;
+    
+    transition: transform 0.5s;
+}
+.social-icon a i:hover {
+    color: crimson;
+    transform: translateY( -5px);
+
+
+}
+
+
+
+.contact-right {
+    margin-left: 35%;
+    margin-top: 20px;
+
+}
+.contact-right form {
+    width: 100%;
+}
+form input, textarea {
+    width: 75%;
+    border:  0;
+    outline:  none;
+    background: #262626;
+    padding:  15px;
+    margin: 15px 0;
+    color: #ffff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+
+
+
+/* -------------SMALLSCREEN---------------------------- */
+@media  only screen and (max-width:1080px) {
+
+    #header-text {
+    
+        margin-left: 30px;
+        margin-top: 35%;
+        font-size: 25px;
+    }
+    #header-text p{
+        font-weight: 300;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/BG.png);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #header-text {
+       font-size: 20px;
+       position: absolute;
+       margin-top: 10%;
+    }
+    .container {
+        padding: 10 10%;
+    }
+    nav {
+        z-index: 999;
+        margin: 5px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 3px;
+    }
+    
+    nav ul li a {
+        color: #ffff;
+        text-decoration: none;
+        font-size: 15px;
+        position: relative;
+        font-weight: 700;
+       
+    }
+    nav ul li a:after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: crimson;
+        position: absolute;
+        bottom: -6px;
+        transition: 0.5s;
+        left: 0;
+    }
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+    
+    button {
+        display: flex;
+        color: #ffff;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 100%;
+        background-color: #f77062;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    button:hover {
+        background: #4837ff;
+        transition: all 0.3s ease;
+    }
+    
+    
+
+
+   
+    
+    .contact-left {
+        
+        position: absolute;
+        flex-basis: 35%;
+        font-size: 10px;
+        margin-top: 130%;
+       margin-left: 0%;
+       left: 0;
+        
+    }
+    
+    
+    
+    .contact-left a{
+        margin-top: 10px;
+        display: flex;
+        text-decoration: none;
+        color: #ffff;
+        font-size: 30px;
+
+    
+    }
+    .contact-left a i {
+        margin-top: 10px;
+        color: crimson;
+        font-size: 40px;
+        margin-right: 10px;
+        transition: transform 0.5s
+        
+    }
+    .contact-left a i:hover {
+        color: crimson;
+        transform: translateY( -5px);
+    }
+    
+    .social-icon {
+        margin-top: 1px;
+        margin-left: 5px;
+    }
+    .social-icon a i {
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 5px;
+        color: crimson ;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+    .social-icon a i:hover {
+        
+        transform: translateY( -5px);
+        color: #ffff;
+    
+    
+    }
+    
+    
+    
+    .contact-right {
+       margin-left: 0;
+       top: 0;
+       
+    }
+    .contact-right form {
+        width: 100%;
+       
+    }
+    form input, textarea {
+        width: 100%;
+        border:  0;
+        outline:  none;
+        background: #262626;
+        padding:  15px;
+        margin: 15px 0;
+        color: #ffff;
+        font-size: 18px;
+        border-radius: 6px;
+    
+    }
+    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>PROJECT</title>
+</head>
+<body>
+  <div id="header">
+    
+   <div class="container">
+    <nav>
+          <ul >
+            <li><a href="#header">HOME</a></li>
+            <li><a href="">PRODUCT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li type="button"><a href="#contact">CONTACT</a></li>
+            
+          </ul>
+          </div>
+      
+    </nav>
+    <div id="header-text">
+      <h1> Good Coffee will always find audience </h1>
+      <p> We Provide variety of unique and best coffee</p>
+      <button type="button">SHOPNOW</button>
+   
+   </div>
+   
+  </div>
+  </div>
+ 
+<!-------------CONTACT----------------------------->
+
+
+<div id="contact">
+  <div class="container">
+    <div class="navbar">
+              
+   <nav>
+    <ul >
+      <li><a href="#header">HOME</a></li>
+      <li><a href="">PRODUCT</a></li>
+      <li><a href="">SERVICES</a></li>
+      <li type="button"><a href="#contact">CONTACT</a></li>
+      
+    </ul>
+   </nav>
+    </div>
+  </div>
+  
+  <div class="contact"> 
+    <div class="container">
+       
+        <div class="row">
+            <div class="contact-left"> 
+                <h1 class="sub-title">Contact Me</h1>
+                <a href=""><i class="fa-solid fa-envelope"></i>contact@ coffeeshop.com</a>
+                <a href=""><i class="fa-solid fa-phone" id="phone"></i>091234567***</a>
+                <div class="social-icon">
+                    <a   href=""><i  class="fa-brands fa-facebook"></i></a>
+                    <a  href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+    </div>
+  </div>
+   </div>
+   <div class="contact-right">
+    <h2> FEED BACK</h2>
+    <form name="submit-to-google-sheet">
+       <input type="text" name="Name" placeholder=" Your Name" required>
+       <input type="email" name="Email" placeholder="Your Email" required>
+       <textarea name="Message"   rows="6" placeholder=" Your Message"> </textarea>
+       <button type="submit" class="btn">Submit</button>
+    </form> 
+    </div>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw9m5C59EnvHeUmmQ0MFm1XopAejlc28lqFrttGDngFbD90-ANLGmsTP6hmMq5_l7oQNQ/exec"
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+</div>
+
+</body>
+</html>
+
+
+   
